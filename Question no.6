@@ -1,0 +1,18 @@
+/*Write a program to calculate factorial of a number*/
+#include<stdio.h>
+int main()
+{
+int i;
+int fact=1;
+int n;
+// input upper limit from user
+printf("Enter the factorial number which you want to see :");
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+    fact=fact*i;
+}
+    
+// finally fcatorial of n will print
+printf("%d",fact);
+return 0;
+}
