@@ -1,0 +1,27 @@
+/*Write a program to check whether a given number is a Prime number or
+not*/
+#include<stdio.h>
+int main()
+{
+int i;
+int n;
+int flag=1;
+// is prime used as flag variable
+// initially i assumed flag=1 is a prime number
+printf("Enter a number to find prime or not :");
+scanf("%d",&n);
+for(i=2;i<n/2;i++){
+    // check divisility upto n
+    if(n%i==0){
+        flag=0;
+    }
+
+}
+if(flag==1){// if flag is 1 then it is prime number 
+    printf("%d is Prime number ",n);
+}
+else{// if flag becomes 0 then it not a prime number 
+    printf("Not a Prime Number ");
+}
+return 0;
+}
