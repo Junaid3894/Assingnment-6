@@ -1,0 +1,19 @@
+/*Write a program to count digits in a given number*/
+#include<stdio.h>
+int main()
+{
+int i;
+int n;
+int count=0;
+// input number from the user to find how many digits in a number
+printf("Enter the number :");
+scanf("%d",&n);
+// start loop from 1 and increment by 1 till n!=0
+for(i=1;n!=0;i++){
+        count++;
+        n/=10;
+}
+printf("%d",count);
+
+return 0;
+}
