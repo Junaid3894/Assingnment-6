@@ -1,0 +1,21 @@
+/*Write a program to calculate LCM of two numbers*/
+#include<stdio.h>
+int main()
+{
+int n;
+int a,b;
+int lcm;
+//Input two numbers for assigning a and b variable
+printf("Enter the two number :");
+scanf("%d %d",&a,&b);
+// start loop from a or b value whose value is greater each other ,
+// increment it by 1 till multiplication of a and b is not fullfilled
+for(lcm=a>b?a:b;lcm<=a*b;lcm++){
+    // check both divisibility with lcm 
+    if(lcm%a==0 && lcm%b==0){
+        break;
+    }
+}
+printf("LCM is %d",lcm);
+return 0;
+}
